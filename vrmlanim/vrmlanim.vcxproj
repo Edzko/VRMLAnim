@@ -52,8 +52,7 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>NotSet</CharacterSet>
     <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -232,14 +231,123 @@
     <Image Include="res\vrmlanim.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaControl.idl" />
-    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaDispatch.idl" />
-    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Cortona_support.idl" />
+    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaControl.idl">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </GenerateTypeLibrary>
+    </Midl>
+    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\CortonaDispatch.idl">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </GenerateTypeLibrary>
+    </Midl>
+    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Cortona_support.idl">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </GenerateTypeLibrary>
+    </Midl>
     <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\PGVRMLSaver.idl">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </GenerateTypeLibrary>
     </Midl>
-    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Shelley.idl" />
+    <Midl Include="..\..\..\..\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include\Shelley.idl">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </MkTypLibCompatible>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\ParallelGraphics\Cortona SDK 4.1\Include</AdditionalIncludeDirectories>
+      <MkTypLibCompatible Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </MkTypLibCompatible>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </GenerateTypeLibrary>
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).h</HeaderFileName>
+      <InterfaceIdentifierFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).c</InterfaceIdentifierFileName>
+      <GenerateTypeLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </GenerateTypeLibrary>
+    </Midl>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
